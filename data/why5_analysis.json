@@ -1,0 +1,329 @@
+{
+  "anchor_bits_per_sample": {
+    "flac5": {
+      "mean": 10.124667916666667,
+      "median": 10.204208333333334,
+      "min": 6.485833333333333,
+      "max": 12.109875
+    },
+    "wavpack": {
+      "mean": 9.7566575,
+      "median": 9.835125000000001,
+      "min": 6.6009166666666665,
+      "max": 11.773916666666667
+    },
+    "zstd3": {
+      "mean": 15.13707791666667,
+      "median": 15.1765,
+      "min": 14.084083333333334,
+      "max": 15.561583333333333
+    },
+    "gzip6": {
+      "mean": 15.056567916666664,
+      "median": 15.125375,
+      "min": 14.058958333333333,
+      "max": 15.552625
+    },
+    "bz2": {
+      "mean": 13.035524166666669,
+      "median": 13.0404375,
+      "min": 10.627,
+      "max": 14.045208333333333
+    },
+    "lzma": {
+      "mean": 14.145721666666667,
+      "median": 14.35625,
+      "min": 11.2995,
+      "max": 15.226166666666666
+    }
+  },
+  "pairwise_correlations": {
+    "flac5 vs wavpack": {
+      "spearman": 0.9959195919591959,
+      "pearson": 0.9941769673953375
+    },
+    "flac5 vs zstd3": {
+      "spearman": 0.3215361536153615,
+      "pearson": 0.28654496647985406
+    },
+    "flac5 vs gzip6": {
+      "spearman": 0.41689768976897684,
+      "pearson": 0.4391045401869755
+    },
+    "flac5 vs bz2": {
+      "spearman": 0.7903630363036304,
+      "pearson": 0.7989327125472192
+    },
+    "flac5 vs lzma": {
+      "spearman": 0.6087368736873687,
+      "pearson": 0.6570809923613166
+    },
+    "wavpack vs zstd3": {
+      "spearman": 0.3459105910591059,
+      "pearson": 0.31407390277254227
+    },
+    "wavpack vs gzip6": {
+      "spearman": 0.4414161416141614,
+      "pearson": 0.46371005800256815
+    },
+    "wavpack vs bz2": {
+      "spearman": 0.8032043204320432,
+      "pearson": 0.8087989496127281
+    },
+    "wavpack vs lzma": {
+      "spearman": 0.6290909090909089,
+      "pearson": 0.6725665141742996
+    },
+    "zstd3 vs gzip6": {
+      "spearman": 0.9830303030303029,
+      "pearson": 0.9725263577938059
+    },
+    "zstd3 vs bz2": {
+      "spearman": 0.6997059705970595,
+      "pearson": 0.6705147746938925
+    },
+    "zstd3 vs lzma": {
+      "spearman": 0.8738673867386737,
+      "pearson": 0.8209146615868932
+    },
+    "gzip6 vs bz2": {
+      "spearman": 0.76001200120012,
+      "pearson": 0.7830931946664316
+    },
+    "gzip6 vs lzma": {
+      "spearman": 0.9317131713171316,
+      "pearson": 0.924318395042269
+    },
+    "bz2 vs lzma": {
+      "spearman": 0.8819561956195618,
+      "pearson": 0.9116654705829611
+    }
+  },
+  "heldout_anchor_error_correlations": {
+    "flac5": {
+      "ACE-Step VAE": {
+        "spearman": 0.7945738295318127,
+        "pearson": 0.7576131658127387
+      },
+      "EnCodec 32 kHz": {
+        "spearman": 0.7690276110444177,
+        "pearson": 0.754687652852004
+      },
+      "Music2Latent": {
+        "spearman": 0.7515486194477791,
+        "pearson": 0.7414356942716976
+      }
+    },
+    "wavpack": {
+      "ACE-Step VAE": {
+        "spearman": 0.7965906362545019,
+        "pearson": 0.7730417233970003
+      },
+      "EnCodec 32 kHz": {
+        "spearman": 0.7761344537815126,
+        "pearson": 0.7711961711335774
+      },
+      "Music2Latent": {
+        "spearman": 0.7584633853541417,
+        "pearson": 0.755737913906073
+      }
+    },
+    "zstd3": {
+      "ACE-Step VAE": {
+        "spearman": 0.46122448979591835,
+        "pearson": 0.4219208006986253
+      },
+      "EnCodec 32 kHz": {
+        "spearman": 0.682016806722689,
+        "pearson": 0.6387354604385136
+      },
+      "Music2Latent": {
+        "spearman": 0.6994957983193277,
+        "pearson": 0.6661795060801007
+      }
+    }
+  },
+  "strata": {
+    "flac5": {
+      "easy": {
+        "n": 17,
+        "bps_median": 9.101291666666667,
+        "mean_error": {
+          "ACE-Step VAE": 0.24390331195557818,
+          "EnCodec 32 kHz": 0.251616805244018,
+          "Music2Latent": 0.3110340067788082
+        },
+        "winner_counts": {
+          "ACE-Step VAE": 11,
+          "EnCodec 32 kHz": 6,
+          "Music2Latent": 0
+        }
+      },
+      "middle": {
+        "n": 16,
+        "bps_median": 10.195291666666666,
+        "mean_error": {
+          "ACE-Step VAE": 0.44590553850866854,
+          "EnCodec 32 kHz": 0.3953987763961777,
+          "Music2Latent": 0.4999890278559178
+        },
+        "winner_counts": {
+          "ACE-Step VAE": 2,
+          "EnCodec 32 kHz": 14,
+          "Music2Latent": 0
+        }
+      },
+      "hard": {
+        "n": 17,
+        "bps_median": 11.000583333333333,
+        "mean_error": {
+          "ACE-Step VAE": 0.5664942863890353,
+          "EnCodec 32 kHz": 0.4796694411950953,
+          "Music2Latent": 0.596186824800337
+        },
+        "winner_counts": {
+          "ACE-Step VAE": 2,
+          "EnCodec 32 kHz": 15,
+          "Music2Latent": 0
+        }
+      }
+    },
+    "wavpack": {
+      "easy": {
+        "n": 17,
+        "bps_median": 8.663333333333334,
+        "mean_error": {
+          "ACE-Step VAE": 0.24929985612192573,
+          "EnCodec 32 kHz": 0.25271988451919136,
+          "Music2Latent": 0.3143376286196358
+        },
+        "winner_counts": {
+          "ACE-Step VAE": 10,
+          "EnCodec 32 kHz": 7,
+          "Music2Latent": 0
+        }
+      },
+      "middle": {
+        "n": 16,
+        "bps_median": 9.820208333333333,
+        "mean_error": {
+          "ACE-Step VAE": 0.4410643946612254,
+          "EnCodec 32 kHz": 0.3992157307220623,
+          "Music2Latent": 0.5047432859428227
+        },
+        "winner_counts": {
+          "ACE-Step VAE": 3,
+          "EnCodec 32 kHz": 13,
+          "Music2Latent": 0
+        }
+      },
+      "hard": {
+        "n": 17,
+        "bps_median": 10.58075,
+        "mean_error": {
+          "ACE-Step VAE": 0.5656541129026342,
+          "EnCodec 32 kHz": 0.47497393431908946,
+          "Music2Latent": 0.5884086071130108
+        },
+        "winner_counts": {
+          "ACE-Step VAE": 2,
+          "EnCodec 32 kHz": 15,
+          "Music2Latent": 0
+        }
+      }
+    },
+    "zstd3": {
+      "easy": {
+        "n": 17,
+        "bps_median": 14.887458333333333,
+        "mean_error": {
+          "ACE-Step VAE": 0.3130615615450284,
+          "EnCodec 32 kHz": 0.2655506773906596,
+          "Music2Latent": 0.3245386147104642
+        },
+        "winner_counts": {
+          "ACE-Step VAE": 5,
+          "EnCodec 32 kHz": 12,
+          "Music2Latent": 0
+        }
+      },
+      "middle": {
+        "n": 16,
+        "bps_median": 15.182125,
+        "mean_error": {
+          "ACE-Step VAE": 0.4122273151297122,
+          "EnCodec 32 kHz": 0.3818409707164392,
+          "Music2Latent": 0.4682007054798305
+        },
+        "winner_counts": {
+          "ACE-Step VAE": 4,
+          "EnCodec 32 kHz": 12,
+          "Music2Latent": 0
+        }
+      },
+      "hard": {
+        "n": 17,
+        "bps_median": 15.418208333333334,
+        "mean_error": {
+          "ACE-Step VAE": 0.5290331882150734,
+          "EnCodec 32 kHz": 0.4784958567470312,
+          "Music2Latent": 0.6126006379285279
+        },
+        "winner_counts": {
+          "ACE-Step VAE": 6,
+          "EnCodec 32 kHz": 11,
+          "Music2Latent": 0
+        }
+      }
+    }
+  },
+  "regression": {
+    "flac5": {
+      "content_only_R2": 0.5261666020956652,
+      "content_plus_codec_R2": 0.5808002623287853,
+      "coeff_content_only": [
+        -0.7368378390054215,
+        0.11486901207161102
+      ],
+      "coeff_content_plus_codec": [
+        -0.7392267031277528,
+        0.11486901207161102,
+        -0.04306002352386757,
+        0.05022661589086011
+      ]
+    },
+    "wavpack": {
+      "content_only_R2": 0.5478659376776468,
+      "content_plus_codec_R2": 0.6024995979107666,
+      "coeff_content_only": [
+        -0.8082904692300863,
+        0.1265085524258566
+      ],
+      "coeff_content_plus_codec": [
+        -0.8106793333524173,
+        0.1265085524258567,
+        -0.04306002352386777,
+        0.05022661589085998
+      ]
+    },
+    "zstd3": {
+      "content_only_R2": 0.3019776984183685,
+      "content_plus_codec_R2": 0.3566113586514884,
+      "coeff_content_only": [
+        -5.015981378125541,
+        0.3587166001318195
+      ],
+      "coeff_content_plus_codec": [
+        -5.018370242247876,
+        0.35871660013181955,
+        -0.04306002352386714,
+        0.05022661589086055
+      ]
+    }
+  },
+  "codec_mean_error": {
+    "ACE-Step VAE": 0.4182249557599425,
+    "EnCodec 32 kHz": 0.3751649322360754,
+    "Music2Latent": 0.4684515716508031
+  }
+}
