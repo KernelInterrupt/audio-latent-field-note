@@ -1,4 +1,4 @@
-# The Codec Floor Is the Result: A Latent Audio Field Note
+# The Codec Floor Is the Result
 
 This folder is self-contained: `index.html` keeps all ten listening clips inline, while the bundled JSON files are frozen inputs used by this note:
 
@@ -6,6 +6,10 @@ This folder is self-contained: `index.html` keeps all ten listening clips inline
 - `data/why5_analysis.json` (8,420 bytes)
 
 The page figures and the probe projections were checked against those frozen files.
+
+## Source and credits
+
+The transfer probe uses MUSDB18-HQ source material (Rafii et al.; distributed via SigSep). See the [MUSDB dataset page](https://sigsep.github.io/datasets/musdb.html) for its source and terms. This note does not establish permission to redistribute the dataset or audio derived from it.
 
 ## Publish with GitHub Pages
 
