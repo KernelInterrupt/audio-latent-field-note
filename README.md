@@ -1,4 +1,4 @@
-# V5 latent audio field note — GitHub Pages package
+# The Codec Floor Is the Result: A Latent Audio Field Note
 
 This folder is self-contained: `index.html` keeps all ten listening clips inline, while the bundled JSON files are frozen inputs used by this note:
 

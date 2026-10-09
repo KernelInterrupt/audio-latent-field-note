@@ -1,6 +1,6 @@
 {
   "protocol": {
-    "manifest": "/mnt/data-1tb/audio-vae-pilot/chain2/eval_windows_v2.json",
+    "manifest": "eval_windows_v2.json",
     "n_windows_requested": 100,
     "n_windows_used": 100,
     "n_tracks": 51,
@@ -50,10 +50,8 @@
     "random_baseline_definition": "shuffle z_target across windows before subtracting each window z_ref; seed 20260925"
   },
   "selfcheck": {
-    "python_executable": "/home/aiserver/miniconda3/bin/python",
     "sample_rate_hz": 48000,
     "window_samples": 192000,
-    "cuda_visible_devices": "GPU-a8f684cb-6a06-6f6f-a9d4-49245384ba58",
     "cudnn_enabled": false,
     "z_ref_encode_twice_max_abs": 0.0,
     "decode_twice_max_abs": 0.0,
